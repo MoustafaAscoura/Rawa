@@ -11,219 +11,350 @@ nav {
 }
 
 nav .logo {
-    display: flex;
-    gap: 6px;
-    cursor: pointer;
+  display: flex;
+  gap: 6px;
+  cursor: pointer;
 }
 
 nav .logo h1 {
-    line-height: 36px;
+  line-height: 36px;
 }
 
 nav .logo svg {
-    width: 24px;
-    height: 24px;
+  width: 24px;
+  height: 24px;
 }
 
 nav .btn {
-    gap: 6px;
-    font-size: 13px;
-    line-height: normal;
-    font-family: "Poppins", sans-serif;
-    cursor: pointer;
-    margin-bottom: 30px;
+  gap: 6px;
+  font-size: 13px;
+  line-height: normal;
+  font-family: "Poppins", sans-serif;
+  cursor: pointer;
+  margin-bottom: 30px;
 }
 
 nav ul {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 nav ul li {
-    margin-bottom: 31px;
+  margin-bottom: 31px;
 }
 
-.icon-text{
-    display: flex;
-    gap: 20px;
-    color: var(--light-200);
+.icon-text {
+  display: flex;
+  gap: 20px;
+  color: var(--light-200);
 }
 
 .icon-text svg path {
-    fill: var(--light-200);
+  fill: var(--light-200);
 }
 
 .icon-text.active {
-    color: var(--primary);
+  color: var(--primary);
 }
 
-.icon-text.active svg path{
-    fill: var(--primary);
+.icon-text.active svg path {
+  fill: var(--primary);
 }
 
 .icon-text.active:before {
-    content: '';
-    width: 7px;
-    height: 32px;
-    position: absolute;
-    left: 0;
-    border-radius: 0 5px 5px 0;
-    background-color: var(--primary);
-    margin-top: -4px;
+  content: "";
+  width: 7px;
+  height: 32px;
+  position: absolute;
+  left: 0;
+  border-radius: 0 5px 5px 0;
+  background-color: var(--primary);
+  margin-top: -4px;
 }
 
 nav .divider {
-    height: 1px;
-    background-color: var(--gray);
-    position: absolute;
-    z-index: 15;
-    width: 100%;
-    left: 0;
+  height: 1px;
+  background-color: var(--gray);
+  position: absolute;
+  z-index: 15;
+  width: 100%;
+  left: 0;
 }
 
 nav .storage {
-    background-color: var(--gray);
-    padding: 20px 22px;
-    border-radius: 10px;
+  background-color: var(--gray);
+  padding: 20px 22px;
+  border-radius: 10px;
 }
 
 nav .storage .outer-circle {
-    background-color: var(--dark);
-    border-radius: 50%;
-    width: 126px;
-    height: 126px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: relative;
-    overflow: hidden;
+  background-color: var(--dark);
+  border-radius: 50%;
+  width: 126px;
+  height: 126px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  overflow: hidden;
 }
 
 nav .storage .used-space-circle {
-    background-color: var(--primary);
-    width: 100%;
-    height: 100%;
-    position: absolute;
-    border-radius: 50%;
-    clip: rect(0px, 126px, 25px, 63px);
-    z-index: 2;
+  background-color: var(--primary);
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  border-radius: 50%;
+  clip: rect(0px, 126px, 25px, 63px);
+  z-index: 2;
 }
 
 nav .storage .clipper {
-    background-color: var(--dark);
-    width: 20%;
-    height: 50%;
-    position: absolute;
-    z-index: 3;
-    transform: rotate(32deg) translateX(10px) translateY(-40px);
+  background-color: var(--dark);
+  width: 20%;
+  height: 50%;
+  position: absolute;
+  z-index: 3;
+  transform: rotate(32deg) translateX(10px) translateY(-40px);
 }
 
 nav .storage .inner-circle {
-    background-color: var(--gray);
-    border-radius: 50%;
-    width: 100px;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    z-index: 5;
+  background-color: var(--gray);
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  z-index: 5;
 }
 
 nav .storage .used-space {
-    color: var(--light-200);
-    font-size: 14px;
-    margin-top: 14px;
-    line-height: 21px;
+  color: var(--light-200);
+  font-size: 14px;
+  margin-top: 14px;
+  line-height: 21px;
 }
-
 
 /* Main Section Styling */
 main {
-    background-color: var(--gray);
-    flex-grow: 1;
-    padding: 40px;
-    padding-bottom: 0;
+  background-color: var(--gray);
+  flex-grow: 1;
+  padding: 40px;
+  padding-bottom: 0;
 }
 
 main .control-panel {
-    display: flex;
-    align-items: center;
-    gap: 18px;
+  display: flex;
+  align-items: center;
+  gap: 18px;
 }
 
 main .search {
-    color: var(--light-200);
-    border: 1px solid var(--light-200);
-    border-radius: 10px;
-    padding: 12px 14px;
-    display: flex;
-    margin-right: 6px;
-    flex-grow: 1;
-    font-weight: 400;
-    line-height: 18px;
+  color: var(--light-200);
+  border: 1px solid var(--light-200);
+  border-radius: 10px;
+  padding: 12px 14px;
+  display: flex;
+  margin-right: 6px;
+  flex-grow: 1;
+  font-weight: 400;
+  line-height: 18px;
 }
 
-main .search img{
-    width: 24px;
-    height: 24px;
+main .search img {
+  width: 24px;
+  height: 24px;
 }
 
-main .search input{
-    background-color: transparent;
-    border: 0;
-    margin-left: 10px;
-    font-size: 12px;
-    line-height: 18px;
-    flex-grow: 1;
-    color: var(--light-200);
+main .search input {
+  background-color: transparent;
+  border: 0;
+  margin-left: 10px;
+  font-size: 12px;
+  line-height: 18px;
+  flex-grow: 1;
+  color: var(--light-200);
 }
-main .search input:focus-visible{
-    outline: none;
+main .search input:focus-visible {
+  outline: none;
 }
 
 main .upload {
-    padding: 9px 20px;
-    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%23939393FF' stroke-width='1' stroke-dasharray='4%2c 8' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
-    border-radius: 10px;
-    color: var(--light-200);
-    line-height: 21px;
-    font-size: 14px;
-    font-weight: 400;
-    display: flex;
-    margin: 1px;
+  padding: 9px 20px;
+  background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%23939393FF' stroke-width='1' stroke-dasharray='4%2c 8' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+  border-radius: 10px;
+  color: var(--light-200);
+  line-height: 21px;
+  font-size: 14px;
+  font-weight: 400;
+  display: flex;
+  align-items: center;
+  margin: 1px;
 }
 
 main .upload p {
-    min-width: fit-content;
-    margin: 0 25px 0 14px;
+  min-width: fit-content;
+  height: fit-content;
+  margin: 0 25px 0 14px;
 }
 main .upload .link {
-    text-decoration: underline;
-    color: var(--primary);
-    cursor: pointer;
+  text-decoration: underline;
+  color: var(--primary);
+  cursor: pointer;
 }
 
 main .control-panel .profile {
-    background-color: rgba(87, 172, 220, 0.11);
-    width: 36px;
-    height: 36px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  background-color: rgba(87, 172, 220, 0.11);
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 main .current-drive {
-    padding: 20px 0;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 main .current-drive h2 {
-    color: var(--light);
-    font-size: 18px;
-    line-height: 27px;
-    font-weight: 400;
+  color: var(--light);
+  font-size: 18px;
+  line-height: 27px;
+  font-weight: 400;
 }
 
+/* Table Design */
+main .table-controls {
+  border-top: 1px solid rgba(250, 250, 250, 0.1);
+  align-items: normal;
+}
+
+main .table-container {
+  overflow-y: auto;
+  max-height: 65vh;
+}
+
+/* Works on Firefox */
+main .table-container {
+  scrollbar-width: thin;
+  scrollbar-color: var(--dark) var(--dark-gray);
+}
+
+/* Works on Chrome, Edge, and Safari */
+main .table-container::-webkit-scrollbar {
+  width: 8px;
+}
+
+main .table-container::-webkit-scrollbar-track {
+  background: var(--dark-gray);
+}
+main .table-container::-moz-scrollbar-button,
+main .table-container::-webkit-scrollbar-button {
+  width: 0px;
+}
+
+main .table-container ::-webkit-scrollbar-thumb {
+  background-color: var(--dark);
+  border-radius: 20px;
+  border: 3px solid var(--dark-gray);
+}
+
+main .table-controls p {
+  color: var(--light-200);
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  padding-block: 15px;
+}
+main .table-controls .d-flex {
+  gap: 12px;
+}
+main .table-controls .d-flex:nth-child(2) {
+  border-left: 1px solid rgba(250, 250, 250, 0.1);
+  border-right: 1px solid rgba(250, 250, 250, 0.1);
+  padding-inline: 16px;
+  margin-inline: 16px;
+}
+
+main table {
+  border: none;
+  width: 100%;
+  border-collapse: collapse;
+  overflow-y: scroll;
+}
+
+main table td {
+  border: none;
+  padding-block: 14px;
+  vertical-align: middle;
+}
+
+main table tr td:first-child {
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-inline: 12px;
+}
+
+main table tr td:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-right: 14px;
+}
+  
+main table tr td:last-child span {
+    margin-right: 32px;
+  }
+
+main table tr {
+  border-radius: 10px;
+}
+
+main table thead tr {
+  background-color: var(--dark-gray);
+}
+
+main table thead tr td {
+  color: rgba(250, 250, 250, 0.7);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+}
+
+main table tbody tr td {
+  color: var(--light);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 24px;
+  max-width: 10vw;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-wrap: nowrap;
+  padding-right: 50px;
+}
+
+main table tbody tr td .d-flex span {
+  text-overflow: ellipsis;
+  overflow: hidden;
+  text-wrap: nowrap;
+}
+
+main table tbody tr img {
+  margin-right: 10px;
+}
+
+main table tbody tr:nth-child(even) {
+  background-color: rgba(139, 139, 139, 0.06);
+}
+
+main table tr td:first-child .checkbox {
+  background-color: var(--gray);
+  border: 1px solid var(--light-200);
+  border-radius: 4px;
+  width: 20px;
+  height: 20px;
+}

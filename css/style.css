@@ -47,6 +47,9 @@ body {
 .text-primary {
     color: var(--primary);
 }
+.text-muted {
+  color: var(--light-200);
+}
 
 .bg-gray {
   background-color: var(--gray);
@@ -72,3 +75,10 @@ body {
 .justify-center {
   justify-content: center;
 }
+.space-between {
+  justify-content: space-between;
+}
+.flex-grow {
+  flex-grow: 1;
+}
+
