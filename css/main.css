@@ -1,0 +1,137 @@
+body {
+  display: flex;
+  min-height: 100vh;
+}
+
+/* Navbar */
+nav {
+  background-color: var(--dark);
+  padding: 40px;
+  position: relative;
+}
+
+nav .logo {
+    display: flex;
+    gap: 6px;
+    cursor: pointer;
+}
+
+nav .logo h1 {
+    line-height: 36px;
+}
+
+nav .logo svg {
+    width: 24px;
+    height: 24px;
+}
+
+nav .btn {
+    gap: 6px;
+    font-size: 13px;
+    line-height: normal;
+    font-family: "Poppins", sans-serif;
+    cursor: pointer;
+    margin-bottom: 30px;
+}
+
+nav ul {
+    list-style-type: none;
+}
+
+nav ul li {
+    margin-bottom: 31px;
+}
+
+.icon-text{
+    display: flex;
+    gap: 20px;
+    color: var(--light-200);
+}
+
+.icon-text svg path {
+    fill: var(--light-200);
+}
+
+.icon-text.active {
+    color: var(--primary);
+}
+
+.icon-text.active svg path{
+    fill: var(--primary);
+}
+
+.icon-text.active:before {
+    content: '';
+    width: 7px;
+    height: 32px;
+    position: absolute;
+    left: 0;
+    border-radius: 0 5px 5px 0;
+    background-color: var(--primary);
+    margin-top: -4px;
+}
+
+nav .divider {
+    height: 1px;
+    background-color: var(--gray);
+    position: absolute;
+    z-index: 15;
+    width: 100%;
+    left: 0;
+}
+
+nav .storage {
+    background-color: var(--gray);
+    padding: 20px 22px;
+    border-radius: 10px;
+}
+
+nav .storage .outer-circle {
+    background-color: var(--dark);
+    border-radius: 50%;
+    width: 126px;
+    height: 126px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+nav .storage .used-space-circle {
+    background-color: var(--primary);
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    border-radius: 50%;
+    clip: rect(0px, 126px, 25px, 63px);
+    z-index: 2;
+}
+
+nav .storage .clipper {
+    background-color: var(--dark);
+    width: 20%;
+    height: 50%;
+    position: absolute;
+    z-index: 3;
+    transform: rotate(32deg) translateX(10px) translateY(-40px);
+}
+
+nav .storage .inner-circle {
+    background-color: var(--gray);
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    z-index: 5;
+}
+
+nav .storage .used-space {
+    color: var(--light-200);
+    font-size: 14px;
+    margin-top: 14px;
+    line-height: 21px;
+}
