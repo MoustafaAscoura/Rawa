@@ -135,3 +135,95 @@ nav .storage .used-space {
     margin-top: 14px;
     line-height: 21px;
 }
+
+
+/* Main Section Styling */
+main {
+    background-color: var(--gray);
+    flex-grow: 1;
+    padding: 40px;
+    padding-bottom: 0;
+}
+
+main .control-panel {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+}
+
+main .search {
+    color: var(--light-200);
+    border: 1px solid var(--light-200);
+    border-radius: 10px;
+    padding: 12px 14px;
+    display: flex;
+    margin-right: 6px;
+    flex-grow: 1;
+    font-weight: 400;
+    line-height: 18px;
+}
+
+main .search img{
+    width: 24px;
+    height: 24px;
+}
+
+main .search input{
+    background-color: transparent;
+    border: 0;
+    margin-left: 10px;
+    font-size: 12px;
+    line-height: 18px;
+    flex-grow: 1;
+    color: var(--light-200);
+}
+main .search input:focus-visible{
+    outline: none;
+}
+
+main .upload {
+    padding: 9px 20px;
+    background-image: url("data:image/svg+xml,%3csvg width='100%25' height='100%25' xmlns='http://www.w3.org/2000/svg'%3e%3crect width='100%25' height='100%25' fill='none' rx='10' ry='10' stroke='%23939393FF' stroke-width='1' stroke-dasharray='4%2c 8' stroke-dashoffset='0' stroke-linecap='square'/%3e%3c/svg%3e");
+    border-radius: 10px;
+    color: var(--light-200);
+    line-height: 21px;
+    font-size: 14px;
+    font-weight: 400;
+    display: flex;
+    margin: 1px;
+}
+
+main .upload p {
+    min-width: fit-content;
+    margin: 0 25px 0 14px;
+}
+main .upload .link {
+    text-decoration: underline;
+    color: var(--primary);
+    cursor: pointer;
+}
+
+main .control-panel .profile {
+    background-color: rgba(87, 172, 220, 0.11);
+    width: 36px;
+    height: 36px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main .current-drive {
+    padding: 20px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+main .current-drive h2 {
+    color: var(--light);
+    font-size: 18px;
+    line-height: 27px;
+    font-weight: 400;
+}
+

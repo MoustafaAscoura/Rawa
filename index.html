@@ -16,7 +16,7 @@
             <img src="images/logo.svg" alt="Logo">
             <h1 class="text-primary fw-bold fs-3">Droppex</h1>
         </div>
-        <button class="btn btn-primary d-flex align-center">
+        <button class="btn btn-primary d-flex align-center" type="button">
             <img src="images/folder.svg" alt="Folder Icon"/>
             New Folder
         </button>
@@ -64,9 +64,15 @@
     </nav>
     <main>
         <div class="control-panel">
-            <input type="text"/>
+            <div class="search">
+                <img src="images/search.svg" alt="Searchbar">
+                <input type="text" placeholder="Search for file, folder, shared storehouse"/>
+                <img src="images/setting.svg" alt="Settings">
+            </div>
             <div class="upload">
-                Drag and drop files, folders, or links
+                <img src="images/cloud-cross.svg" alt="Upload files">
+                <p>Drag and drop <span class="link">files</span>, <span class="link">folders</span>, or <span class="link">links</span>
+                </p>
             </div>
             <div class="link">
                 <img src="images/link.svg" alt="link">
@@ -76,7 +82,26 @@
             </div>
         </div>
         <div class="current-drive">
-
+            <h2>Ramy Main Drive</h2>
+            <img src="images/info.svg" alt="Info">
+        </div>
+        <div class="files">
+            <div class="table-controls"></div>
+            <table>
+                <thead>
+                    <tr>
+                        <td><input type="checkbox"></td>
+                        <td>Name</td>
+                        <td>Uploaded</td>
+                        <td>Size</td>
+                        <td>View No.</td>
+                        <td class="d-flex">
+                            <span>Last Modified</span>
+                            <img src="images/arrow-down.svg" alt="">
+                        </td>
+                    </tr>
+                </thead>
+            </table>
         </div>
     </main>
 </body>

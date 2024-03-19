@@ -1,6 +1,7 @@
 :root {
   --primary: #57acdc;
-  --light: #FFFFFF;
+  --white: #FFFFFF;
+  --light: #FAFAFA;
   --light-100: #FAFAFAB2;
   --light-200: #939393;
   --dark: #121212;
@@ -45,6 +46,10 @@ body {
 
 .text-primary {
     color: var(--primary);
+}
+
+.bg-gray {
+  background-color: var(--gray);
 }
 
 .btn{
